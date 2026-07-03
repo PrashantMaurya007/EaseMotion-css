@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern SaaS Skew-Active Tooltip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="saas-container">
+        <div class="saas-feature-card">
+            <div class="saas-card-header">
+                <div class="service-identity">
+                    <div class="service-icon">⚡</div>
+                    <span class="service-name">Webhook Delivery Pipeline</span>
+                </div>
+                <span class="service-status">Active</span>
+            </div>
+
+            <p class="service-meta">
+                Automated platform events route secure payloads directly toward registered user endpoints.
+            </p>
+
+            <div class="tooltip-wrapper">
+                <button type="button" class="saas-interactive-trigger" aria-describedby="saas-skew-tooltip">
+                    Inspect Signing Secret
+                </button>
+
+                <div id="saas-skew-tooltip" class="saas-tooltip" role="tooltip">
+                    <span class="tooltip-top-accent"></span>
+                    <span class="tooltip-tag-pill">Security Guard</span>
+                    <p class="tooltip-body">Cryptographic tokens match incoming payload signature headers to avoid
+                        structural replay injections.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
